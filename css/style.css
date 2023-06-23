@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+
+  .tarjeta {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilos del tablero */
+  .tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .casilla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .casilla p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .sin-derecha {
+    border-right: none;
+  }
+
+  .sin-abajo {
+    border-bottom: none;
+  }
+
+  /* Estilos del formulario y botones */
+  .formulario {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #4286f4;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .btn-j {
+    margin-right: 10px;
+  }
+
+  .reiniciar {
+    background-color: #f44336;
+  }
+
+  /* Estilos del mensaje de ganador */
+  .ganador {
+    text-align: center;
+  }
+
+  .ganador-texto {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .texto-x,
+  .texto-o,
+  .empate {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .oculto {
+    display: none;
+  }

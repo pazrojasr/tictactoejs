@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="ganador">
+      <p class="ganador-texto oculto">El ganador es</p>
+      <p class="texto-x oculto">X</p>
+      <p class="texto-o oculto">O</p>
+      <p class="empate oculto">Es un empate</p>
+    </div>
+
+    <div class="tarjeta">
+      <div class="elemento seleccionar">
+        <form action="" class="formulario">
+          <select name="niveles" id="niveles">
+            <option value="facil">Fácil</option>
+            <option value="medio">Medio</option>
+            <option value="dificil">Difícil</option>
+            <option value="invencible">Invencible</option>
+          </select>
+        </form>
+      </div>
+      <div class="elemento jugador">
+        <button class="btn btn-j x">X</button>
+        <button class="btn btn-j o">O</button>
+      </div>
+      <div class="elemento tablero">
+        <button class="casilla"><p></p></button>
+        <button class="casilla"><p></p></button>
+        <button class="casilla sin-derecha"><p></p></button>
+        <button class="casilla"><p></p></button>
+        <button class="casilla"><p></p></button>
+        <button class="casilla sin-derecha"><p></p></button>
+        <button class="casilla sin-abajo"><p></p></button>
+        <button class="casilla sin-abajo"><p></p></button>
+        <button class="casilla sin-abajo sin-derecha"><p></p></button>
+      </div>
+      <div class="elemento reinicio">
+        <button class="btn reiniciar">Reiniciar</button>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
